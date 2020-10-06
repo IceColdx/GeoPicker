@@ -23,8 +23,10 @@
     <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-a11y="true" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/styleaccount.css">
     <script src="js/gmaps.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/account.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -35,8 +37,8 @@
           </div>
           <ul class="list-unstyled components">
             <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="account.html"><i class="fas fa-user"></i> Account</a></li>
-            <li class="active"><a href="world.html"><i class="fas fa-map-marker-alt"></i> World</a></li>
+            <li class="active"><a href="account.html"><i class="fas fa-user"></i> Account</a></li>
+            <li><a href="world.html"><i class="fas fa-map-marker-alt"></i> World</a></li>
             <li><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-globe"></i> Continents</a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
                   <li><a href="#"><i class="fas fa-globe-europe"></i> Europe</a></li>
@@ -59,24 +61,62 @@
           </button>
       </div>
     </div>
-    <div id="map"></div>
-    <div id="streetview"></div>
-    <!-- Large modal -->
-    <div class="modal" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="false">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <p id="dist"></p>
-          <div class="progress">
-            <div class="progress-bar bg-info" id="progressBar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <div class="form">
+        <div class="form-toggle"></div>
+        <div class="form-panel one">
+          <div class="form-header">
+            <h1>Account Login</h1>
           </div>
-          <br>
+          <div class="form-content">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" required="required"/>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" required="required"/>
+              </div>
+              <div class="form-group">
+                <label class="form-remember">
+                  <input type="checkbox"/>Remember Me
+                </label><a class="form-recovery" href="#">Forgot Password?</a>
+              </div>
+              <div class="form-group">
+                <button type="submit">Log In</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="form-panel two">
+          <div class="form-header">
+            <h1>Register Account</h1>
+          </div>
+          <div class="form-content">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" required="required"/>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" required="required"/>
+              </div>
+              <div class="form-group">
+                <label for="cpassword">Confirm Password</label>
+                <input id="cpassword" type="password" name="cpassword" required="required"/>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input id="email" type="email" name="email" required="required"/>
+              </div>
+              <div class="form-group">
+                <button type="submit">Register</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Guess Button -->
-    <div class="container">
-      <button type="button" id="guessButton" class="btn btn-info" onclick="createLine(), showResult()" disabled>Confirm Guess</button>
-      document.write(number)
-    </div>
   </body>
 </html>
