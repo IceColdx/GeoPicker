@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 40%;
+  width: 100%;
+}
+#streetview {
+  height: 60%;
+  width: 100%;
+}
+
+#guessButton {
+  position: absolute;
+  top: 312px;
+  right: 75px;
+}
