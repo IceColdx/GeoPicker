@@ -1,49 +1,74 @@
-html {
-    width: 100%;
-    height: 100%;
-  }
-  
-  body {
-    background: linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%);
-    font-family: 'Poppins', sans-serif;
-    background: #DCDCDC;
-    font-size: 14px;
-    line-height: 1.6em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
-
-.navbar {
-    padding: 15px 10px;
-    background: #543;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
 }
-
-#sidebarCollapse {
-    position: absolute;
-    top: 24px;
-    left: 0;
-    box-shadow: none;
-    outline: none !important;
-    border: none;
+.social-btns .btn {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
-
-/* ---------------------------------------------------
-    SIDEBAR 
------------------------------------------------------ */
-
-
+.social-btns .btn.facebook{
+  color: #3b5998;
+  background-color: transparent;
+}
+.social-btns .btn.twitter {
+  color: #3cf;
+}
+.social-btns .btn.google {
+  color: #dc4a38;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus,
+.social-btns .btn:hover {
+  background-color: transparent;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.social-btns {
+  font-size: 0;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 23px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn {
+  font-size: 38px;
+  vertical-align: middle;
+}
   
   .overlay, .form-panel.one:before {
     position: absolute;
@@ -60,6 +85,7 @@ a:focus {
     position: relative;
     background: #FFFFFF;
     width: 1000px;
+    height: 600px;
     border-radius: 4px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -93,7 +119,7 @@ a:focus {
     left: 50%;
     width: 30px;
     height: 4px;
-    background: #4285F4;
+    background: #5bc0de;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
@@ -133,7 +159,13 @@ a:focus {
   }
   .two .form-group label {
     color: #FFFFFF;
+    font-size: 11px;
   }
+
+  .two .form-group input {
+    height: 50px;
+  }
+
   .form-group input {
     outline: none;
     display: block;
@@ -162,7 +194,7 @@ a:focus {
   }
   .form-group button {
     outline: none;
-    background: #4285F4;
+    background: #5bc0de;
     width: 100%;
     border: 0;
     border-radius: 4px;
@@ -175,9 +207,14 @@ a:focus {
     text-transform: uppercase;
     cursor: pointer;
   }
+
+  #login {
+    margin-top: 49px;
+  }
+
   .two .form-group button {
     background: #FFFFFF;
-    color: #4285F4;
+    color: #5bc0de;
   }
   .form-group .form-remember {
     font-size: 12px;
@@ -191,7 +228,7 @@ a:focus {
     margin: 0 10px 0 0;
   }
   .form-group .form-recovery {
-    color: #4285F4;
+    color: #5bc0de;
     font-size: 12px;
     text-decoration: none;
   }
@@ -217,7 +254,7 @@ a:focus {
     position: absolute;
     top: 0;
     left: 95%;
-    background: #4285F4;
+    background: #5bc0de;
     width: 100%;
     min-height: 100%;
     padding: 60px calc(10% + 60px) 60px 60px;
@@ -248,7 +285,7 @@ a:focus {
     opacity: 0;
   }
   .form-panel.two.active {
-    left: 10%;
+    left: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: default;
   }
@@ -260,7 +297,7 @@ a:focus {
   }
   .form-header h1 {
     padding: 4px 0;
-    color: #4285F4;
+    color: #5bc0de;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
@@ -270,33 +307,5 @@ a:focus {
     z-index: 40;
     color: #FFFFFF;
   }
-  
-  .pen-footer {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    width: 600px;
-    margin: 20px auto 100px;
-  }
-  .pen-footer a {
-    color: #FFFFFF;
-    font-size: 12px;
-    text-decoration: none;
-    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);
-  }
-  .pen-footer a .material-icons {
-    width: 12px;
-    margin: 0 5px;
-    vertical-align: middle;
-    font-size: 12px;
-  }
-  
-  .cp-fab {
-    background: #FFFFFF !important;
-    color: #4285F4 !important;
-  }
+
   
