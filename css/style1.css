@@ -365,6 +365,7 @@ h3 {
 .sidebar-is-expanded .c-menu > ul .c-menu__item .c-menu-item__expand {
   left: 0px;
 }
+
 .c-menu > ul .c-menu__item .c-menu-item__title {
   flex-basis: 100%;
   padding-right: 10px;
@@ -390,6 +391,26 @@ h3 {
   -o-transition: left 0.5s ease-in-out;
   transition: left 0.5s ease-in-out;
 }
+
+.l-sidebar .logo .logo__txt {
+  flex-basis: 100%;
+  padding-right: 10px;
+  position: relative;
+  color: #fff;
+  left: 220px;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.sidebar-is-expanded .l-sidebar .logo .logo__txt {
+  left: 30px;
+  opacity: 1;
+}
+
 .sidebar-is-expanded .c-menu > ul .c-menu__item .c-menu-item__title {
   left: 0px;
   opacity: 1;
