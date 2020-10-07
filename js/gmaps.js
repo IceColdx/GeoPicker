@@ -109,6 +109,16 @@ function clearMarkers() {
   markers = [];
 }
 
+// Calculate points for DistanceBetween.
+var points = [];
+function points() {
+	var calc = distance
+	for (let i=0;i<=calc;++i) {
+	    points.push(100/Math.pow(1.12,i));
+	}
+    console.log(points)
+}
+
 function showResult() {
   document.getElementById('streetview').style.display = 'none';
   document.getElementById('map').style.height = '100%';
@@ -117,4 +127,5 @@ function showResult() {
   $('#resultModal').modal({
   show: true
   })
+  document.getElementById()
 }
