@@ -111,11 +111,13 @@ function clearMarkers() {
 
 // Calculate points for DistanceBetween.
 var points = [];
+var calc;
 function points() {
-	var calc = distance
+	calc = distance
 	for (let i=0;i<=calc;++i) {
 	    points.push(100/Math.pow(1.12,i));
 	}
+    points
     console.log(points)
 }
 
@@ -127,5 +129,5 @@ function showResult() {
   $('#resultModal').modal({
   show: true
   })
-  document.getElementById()
+  $('#progressBar').width(calc + "%").attr('aria-valuenow', calc);
 }
