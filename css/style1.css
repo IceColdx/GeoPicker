@@ -5,8 +5,6 @@ html, body {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
@@ -205,8 +203,6 @@ h3 {
   transition: padding 0.5s ease-in-out;
 }
 .l-header__inner {
-  height: 100%;
-  width: 100%;
   display: flex;
   height: 70px;
   align-items: center;
@@ -216,27 +212,6 @@ h3 {
 }
 .sidebar-is-expanded .l-header {
   padding-left: 220px;
-}
-
-.c-search {
-  display: flex;
-  flex-grow: 1;
-  height: 100%;
-}
-.c-search__input {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-right: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  font-size: 14px;
-  padding: 0 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 .c-dropdown {
@@ -439,119 +414,19 @@ h3 {
 }
 
 main.l-main {
-  width: 2500px;
-  padding-right: 200px;
+  width: 100%;
+  height: 100%;
+  right: 110px;
   -webkit-transition: padding 0.5s ease-in-out;
   -moz-transition: padding 0.5s ease-in-out;
   -ms-transition: padding 0.5s ease-in-out;
   -o-transition: padding 0.5s ease-in-out;
   transition: padding 0.5s ease-in-out;
+  position: relative;
 }
 
-main.l-main .content-wrapper {
-  height: 100%;
-  overflow: auto;
-}
-main.l-main .content-wrapper .page-content {
-  border-top: 1px solid #d0d0d0;
-  padding-top: 25px;
-  color: #ababab;
-}
-main.l-main .content-wrapper--with-bg .page-content {
-  background: #fff;
-  border-radius: 3px;
-  border: 1px solid #d0d0d0;
-  padding: 25px;
-}
-main.l-main .page-title {
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 25px;
-}
 .sidebar-is-expanded main.l-main {
   padding-left: 100px;
-}
-
-.wrapper {
-    display: flex;
-    width: 100%;
-}
-
-#sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 999;
-    background: #292b2c;
-    color: #C0C0C0;
-    transition: all 0.3s;
-}
-
-#sidebar.active {
-    margin-left: -250px;
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #292b2c;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-
-#sidebar ul li a:hover {
-    color: #5bc0de;
-    background: #fff;
-}
-
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #fff;
-    background: #5bc0de;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-ul ul a {
-    font-size: 1.0em !important;
-    padding-left: 30px !important;
-    background: #fff;
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
 }
 
 /* ---------------------------------------------------
@@ -574,9 +449,9 @@ ul.CTAs a {
 
 .region {
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 355px;
     column-gap: 50px;
-    width: 2100px;
+    width: 1495px;
     display: flex;
     display: -webkit-flex;
     justify-content: center;
@@ -597,12 +472,47 @@ ul.CTAs a {
   
   .card--1 .card__img,
   .card--1 .card__img--hover {
-    background-image: url("https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-image: url("../images/netherlands-flag-small.png");
   }
   
   .card--2 .card__img,
   .card--2 .card__img--hover {
-    background-image: url("https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-image: url("../images/turkey-flag-small.png");
+  }
+
+  .card--3 .card__img,
+  .card--3 .card__img--hover {
+    background-image: url("../images/germany-flag-small.png");
+  }
+
+  .card--4 .card__img,
+  .card--4 .card__img--hover {
+    background-image: url("../images/spain-flag-small.png");
+  }
+
+  .card--5 .card__img,
+  .card--5 .card__img--hover {
+    background-image: url("../images/greece-flag-small.png");
+  }
+
+  .card--6 .card__img,
+  .card--6 .card__img--hover {
+    background-image: url("../images/region_na.jpg");
+  }
+
+  .card--7 .card__img,
+  .card--7 .card__img--hover {
+    background-image: url("../images/region_eu.jpg");
+  }
+
+  .card--8 .card__img,
+  .card--8 .card__img--hover {
+    background-image: url("../images/region_asia.jpg");
+  }
+
+  .card--9 .card__img,
+  .card--9 .card__img--hover {
+    background-image: url("../images/region_sa.jpg");
   }
   
   .card__like {
