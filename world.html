@@ -26,30 +26,55 @@
     <script src="js/gmaps.js"></script>
     <script src="js/nav.js"></script>
   </head>
-  <body>
-    <div class="wrapper">
-      <!-- Sidebar  -->
-      <nav id="sidebar">
-          <div class="sidebar-header">
-              <h3>GeoPicker</h3>
-          </div>
-          <ul class="list-unstyled components">
-            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="account.html"><i class="fas fa-user"></i> Account</a></li>
-            <li class="active"><a href="world.html"><i class="fas fa-map-marker-alt"></i> World</a></li>
-            <li><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-globe"></i> Continents</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu">
-                  <li><a href="#"><i class="fas fa-globe-europe"></i> Europe</a></li>
-                  <li><a href="#"><i class="fas fa-globe-asia"></i> Asia</a></li>
-                  <li><a href="#"><i class="fas fa-globe-africa"></i> Africa</a></li>
-                  <li><a href="#"><i class="fas fa-globe-americas"></i> North America</a></li>
-                  <li><a href="#"><i class="fas fa-globe-americas"></i> South Africa</a></li>
-              </ul>
+  <body class="sidebar-is-reduced">
+    <header class="l-header">
+    </header>
+    <div class="l-sidebar">
+      <div class="logo">
+        <div class="logo__txt">G</div>
+      </div>
+      <div class="l-sidebar__content">
+        <nav class="c-menu js-menu">
+          <ul class="u-list">
+            <li class="c-menu__item" data-toggle="tooltip" title="Home">
+              <a href="index.html">
+              <div class="c-menu__item__inner"><i class="fas fa-home"></i>
+                <div class="c-menu-item__title"><span>Home</span></div>
+              </div>
+              </a>
             </li>
-            <li><a href="#"><i class="fas fa-archway"></i> Famous places</a></li>
-            <li><a href="#"><i class="fas fa-file-contract"></i> Contact</a></li>
+            <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Account">
+              <a href="account.html">
+              <div class="c-menu__item__inner"><i class="fas fa-user"></i>
+                <div class="c-menu-item__title"><span>Account</span></div>
+              </div>
+              </a>
+            </li>
+            <li class="c-menu__item has-submenu is-active" data-toggle="tooltip" title="World">
+              <a href="world.html">
+              <div class="c-menu__item__inner"><i class="fas fa-globe"></i>
+                <div class="c-menu-item__title"><span>World</span></div>
+              </div>
+              </a>
+            </li>
+            <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Continents">
+              <div class="c-menu__item__inner"><i class="fas fa-map-marker-alt"></i>
+                <div class="c-menu-item__title"><span>Continents</span></div>
+              </div>
+            </li>
+            <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Famous places">
+              <div class="c-menu__item__inner"><i class="fas fa-archway"></i>
+                <div class="c-menu-item__title"><span>Famous places</span></div>
+              </div>
+            </li>
+            <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Contact">
+              <div class="c-menu__item__inner"><i class="fas fa-file"></i>
+                <div class="c-menu-item__title"><span>Contact</span></div>
+              </div>
+            </li>
           </ul>
-      </nav>
+        </nav>
+      </div>
     </div>
     <!-- Page Content  -->
     <div id="content">
