@@ -92,16 +92,10 @@ function createLine(map) {
 // Adds a marker to the map and push to the array
 function addMarker(location, map) {
   clearMarkers();
-  const image = {
-    url:
-      "images/marker.png",
-    // This marker is 20 pixels wide by 32 pixels high.
-    size: new google.maps.Size(20, 32),
-  };
   const marker = new google.maps.Marker({
     position: location,
-    draggable:false,
-    icon: image,
+    draggable: false,
+    icon: "images/marker.png",
     map: map
   });
   markers.push(marker);
