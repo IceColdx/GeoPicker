@@ -7,7 +7,7 @@ var latLngB;
 var latTest;
 var latB;
 var lngB;
-var distance
+var distance;
 
 // Create random streetview pos(A)
 function random_location() {
@@ -92,6 +92,7 @@ function createLine(map) {
 // Adds a marker to the map and push to the array
 function addMarker(location, map) {
   clearMarkers();
+  const markerSize =
   const marker = new google.maps.Marker({
     position: location,
     draggable: false,
@@ -116,7 +117,6 @@ function clearMarkers() {
 
 // Calculate points for DistanceBetween.
 function points() {
-  distance = 1
 	point = (1000/Math.pow(distance, 1.4));
     console.log(point)
 }
@@ -129,5 +129,5 @@ function showResult() {
   $('#resultModal').modal({
   show: true
   })
-  $('#progressBar').width(calc + "%").attr('aria-valuenow', calc);
+  $('#progressBar').width(point + "%").attr('aria-valuenow', point);
 }
