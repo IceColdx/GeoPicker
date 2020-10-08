@@ -7,7 +7,7 @@ var latLngB;
 var latTest;
 var latB;
 var lngB;
-var distance;
+var distance
 
 // Create random streetview pos(A)
 function random_location() {
