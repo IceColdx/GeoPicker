@@ -93,10 +93,9 @@ function createLine(map) {
 // Adds a marker to the map and push to the array
 function addMarker(location, map) {
   clearMarkers();
-  const markerSize =
   const marker = new google.maps.Marker({
     position: location,
-    draggable: false,
+    draggable: true,
     icon: "images/marker.png",
     map: map
   });
@@ -118,7 +117,7 @@ function clearMarkers() {
 
 // Calculate points
 function pointCount() {
-  points = (1000/Math.pow(distance, 1.4));
+  points = (10000/Math.pow(distance, 1.4));
   console.log(points)
 }
 
