@@ -392,6 +392,116 @@ h3 {
   transition: left 0.5s ease-in-out;
 }
 
+main.l-main .cards .card--1 .card__info span{
+  padding-right: 10px;
+}
+
+main.l-main .cards .card--1 .card__info .fa-heart{
+  color: red;
+}
+
+main.l-main .cards .card--1 .card__info .fa-star{
+  color: gold;
+}
+
+main.l-main .cards .card--2 .card__info span{
+  padding-right: 10px;
+}
+
+main.l-main .cards .card--2 .card__info .fa-heart{
+  color: red;
+}
+
+main.l-main .cards .card--2 .card__info .fa-star{
+  color: gold;
+}
+
+main.l-main .cards .card--3 .card__info span{
+  padding-right: 10px;
+}
+
+main.l-main .cards .card--3 .card__info .fa-heart{
+  color: red;
+}
+
+main.l-main .cards .card--3 .card__info .fa-star{
+  color: gold;
+}
+
+main.l-main .cards .card--4 .card__info span{
+  padding-right: 10px;
+}
+
+main.l-main .cards .card--4 .card__info .fa-heart{
+  color: red;
+}
+
+main.l-main .cards .card--4 .card__info .fa-star{
+  color: gold;
+}
+
+main.l-main .cards .card--5 .card__info span{
+  padding-right: 10px;
+}
+
+main.l-main .cards .card--5 .card__info .fa-heart{
+  color: red;
+}
+
+main.l-main .cards .card--5 .card__info .fa-star{
+  color: gold;
+}
+
+main.l-main .region .card--6 .card__info span{
+  padding-right: 10px;
+}
+
+main.l-main .region .card--6 .card__info .fa-heart{
+  color: red;
+}
+
+main.l-main .region .card--6 .card__info .fa-star{
+  color: gold;
+}
+
+main.l-main .region .card--7 .card__info span{
+  padding-right: 10px;
+}
+
+main.l-main .region .card--7 .card__info .fa-heart{
+  color: red;
+}
+
+main.l-main .region .card--7 .card__info .fa-star{
+  color: gold;
+}
+
+
+main.l-main .region .card--8 .card__info span{
+  padding-right: 10px;
+}
+
+main.l-main .region .card--8 .card__info .fa-heart{
+  color: red;
+}
+
+main.l-main .region .card--8 .card__info .fa-star{
+  color: gold;
+}
+
+main.l-main .region .card--9 .card__info span{
+  padding-right: 10px;
+}
+
+main.l-main .region .card--9 .card__info .fa-heart{
+  color: red;
+}
+
+main.l-main .region .card--9 .card__info .fa-star{
+  color: gold;
+}
+
+
 
 
 .l-sidebar .logo .logo__txt {
@@ -556,7 +666,7 @@ main.l-main {
   }
   
   .card__info-hover {
-    display: none;
+    display: inline;
     position: absolute;
     padding: 16px;
     width: 100%;
