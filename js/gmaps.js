@@ -117,8 +117,8 @@ function clearMarkers() {
 
 // Calculate points for DistanceBetween.
 function points() {
-	point = (1000/Math.pow(distance, 1.4));
-    console.log(point)
+	var point = (1000/Math.pow(distance, 1.4));
+  console.log(point)
 }
 
 function showResult() {
