@@ -57,6 +57,12 @@ function processSVData(data, status) {
       heading: 60,
       pitch: 10,
     });
+    panorama.setMotionTracking({
+      motionTracking: false,
+    });
+    panorama.setOptions({
+      addressControl: false,
+    });
     panorama.setVisible(true);
   } else {
     console.error("Street View data not found for this location.");
