@@ -93,7 +93,6 @@ function createLine(map) {
 // Adds a marker to the map and push to the array
 function addMarker(location, map) {
   clearMarkers();
-  const markerSize = 4
   const marker = new google.maps.Marker({
     position: location,
     draggable: false,
