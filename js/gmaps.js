@@ -7,7 +7,7 @@ var latLngB;
 var latTest;
 var latB;
 var lngB;
-var distance
+var distance;
 
 // Create random streetview pos(A)
 function random_location() {
@@ -57,12 +57,10 @@ function processSVData(data, status) {
       heading: 60,
       pitch: 10,
     });
-    panorama.setMotionTracking({
-      motionTracking: false,
-    });
     panorama.setOptions({
       addressControl: false,
     });
+    panorama.setMotionTracking(false);
     panorama.setVisible(true);
   } else {
     console.error("Street View data not found for this location.");
@@ -94,9 +92,11 @@ function createLine(map) {
 // Adds a marker to the map and push to the array
 function addMarker(location, map) {
   clearMarkers();
+  const markerSize =
   const marker = new google.maps.Marker({
     position: location,
-    draggable:false,
+    draggable: false,
+    icon: "images/marker.png",
     map: map
   });
   markers.push(marker);
@@ -116,15 +116,9 @@ function clearMarkers() {
 }
 
 // Calculate points for DistanceBetween.
-var points = [];
-var calc;
 function points() {
-	calc = distance
-	for (let i=0;i<=calc;++i) {
-	    points.push(100/Math.pow(1.12,i));
-	}
-    points
-    console.log(points)
+	point = (1000/Math.pow(distance, 1.4));
+    console.log(point)
 }
 
 function showResult() {
@@ -135,5 +129,5 @@ function showResult() {
   $('#resultModal').modal({
   show: true
   })
-  $('#progressBar').width(calc + "%").attr('aria-valuenow', calc);
+  $('#progressBar').width(point + "%").attr('aria-valuenow', point);
 }
