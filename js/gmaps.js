@@ -117,7 +117,7 @@ function clearMarkers() {
 
 // Calculate points
 function pointCount() {
-  points = (10000/Math.pow(distance, 1.4));
+  points = (10000/Math.pow(distance, 0.8));
   console.log(points)
 }
 
