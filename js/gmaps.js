@@ -8,6 +8,7 @@ var latTest;
 var latB;
 var lngB;
 var distance;
+var points
 
 // Create random streetview pos(A)
 function random_location() {
@@ -115,11 +116,18 @@ function clearMarkers() {
   markers = [];
 }
 
+// Calculate points for DistanceBetween.
+function pointCount() {
+	points = (1000/Math.pow(distance, 1.4));
+  console.log(points)
+}
+
 function showResult() {
   document.getElementById('streetview').style.display = 'none';
   document.getElementById('map').style.height = '100%';
   document.getElementById('guessButton').style.display = 'none';
   document.getElementById("dist").innerHTML=distance.toFixed(2) + " km away from location.";
+  $('#progressBar').width(points + "%").attr('aria-valuenow', points);
   $('#resultModal').modal({
   show: true
   })
