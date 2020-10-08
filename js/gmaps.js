@@ -105,7 +105,7 @@ function addMarker(location, map) {
   const marker = new google.maps.Marker({
     position: location,
     draggable:false,
-    icon: image;
+    icon: image,
     map: map
   });
   markers.push(marker);
