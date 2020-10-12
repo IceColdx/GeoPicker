@@ -1,5 +1,5 @@
 <?php
-require 'google-auth.php';
+require 'config.php';
 ?>
 
 <!DOCTYPE html>
