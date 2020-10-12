@@ -81,9 +81,9 @@ require 'google-auth.php';
         </nav>
       </div>
     </div>
-    <button type="button" class="btn btn-danger" onclick=" relocate_home()">logout</button>
+    <button type="button" class="btn btn-danger" onclick="relocate_home()">logout</button>
     <script src="js/nav.js"></script>
-    <script src="js/.js"></script>
+    <script src="js/logout.js"></script>
   </body>
 
 </html>
