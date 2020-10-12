@@ -18,7 +18,7 @@ $google_client->setClientId('928422964444-ej5pvfmpoiq9mqqe8rlffgi2us78148t.apps.
 $google_client->setClientSecret('ITsztKw6QjuvftCSFljF-NSh');
 
 //Set the OAuth 2.0 Redirect URI
-$google_client->setRedirectUri('http://localhost/geopicker/account-login.php');
+$google_client->setRedirectUri('https://geopicker.herokuapp.com/account-login.php');
 
 // to get the email and profile 
 $google_client->addScope('email');
