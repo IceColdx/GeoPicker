@@ -49,13 +49,7 @@ require 'google-auth.php';
               </a>
             </li>
             <li class="c-menu__item has-submenu is-active" data-toggle="tooltip" title="Account">
-              <?php
-              if (session_status() == PHP_SESSION_ACTIVE) {
-                  echo header('location:https://geopicker.herokuapp.com/account-login.php');
-              } else {
-                  echo header('location:https://geopicker.herokuapp.com/account.php');
-              }
-              ?>
+              <a href="account-login.php">
               <div class="c-menu__item__inner"><i class="fas fa-user"></i>
                 <div class="c-menu-item__title"><span>Account</span></div>
               </div>
@@ -89,7 +83,7 @@ require 'google-auth.php';
     </div>
     <button type="button" class="btn btn-danger" onclick=" relocate_home()">logout</button>
     <script src="js/nav.js"></script>
-    <script src="js/logout.js"></script>
+    <script src="js/.js"></script>
   </body>
 
 </html>

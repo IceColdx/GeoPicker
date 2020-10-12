@@ -43,7 +43,13 @@
             </a>
           </li>
           <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Account">
-          <a href="account.php">
+          <?php
+          if (session_status() == PHP_SESSION_ACTIVE) {
+              echo header('location:https://geopicker.herokuapp.com/account-login.php');
+          } else {
+              echo header('location:https://geopicker.herokuapp.com/account.php');
+          }
+          ?>
             <div class="c-menu__item__inner"><i class="fas fa-user"></i>
               <div class="c-menu-item__title"><span>Account</span></div>
             </div>
