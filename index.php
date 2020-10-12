@@ -49,9 +49,9 @@ require 'google-auth.php';
           <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Account">
           <?php
           if(isset($_SESSION['access_token'])){
-            header('Location: http://localhost/geopicker/account-login.php');
+            header('Location: https://geopicker.herokuapp.com/account-login.php');
           } else {
-            header('Location: http://localhost/geopicker/account.php');
+            header('Location: https://geopicker.herokuapp.com/account.php');
           } 
           ?>
             <div class="c-menu__item__inner"><i class="fas fa-user"></i>
