@@ -47,7 +47,13 @@ require 'google-auth.php';
             </a>
           </li>
           <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Account">
-          <a href="account-login.php">
+          <?php
+          if(isset($_SESSION['access_token'])){
+            header('Location: http://localhost/geopicker/account-login.php');
+          } else {
+            header('Location: http://localhost/geopicker/account.php');
+          } 
+          ?>
             <div class="c-menu__item__inner"><i class="fas fa-user"></i>
               <div class="c-menu-item__title"><span>Account</span></div>
             </div>

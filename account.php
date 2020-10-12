@@ -107,7 +107,7 @@ require 'google-auth.php';
             <?php
               if($login_button == '')
               {
-                header('Location: http://localhost/geopicker/account-login.html');
+                header('Location: http://localhost/geopicker/account-login.php');
               }
               else
               {
