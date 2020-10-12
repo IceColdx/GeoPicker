@@ -43,7 +43,7 @@
             </a>
           </li>
           <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Account">
-          <a href="account-login.php">
+          <a href="account.php">
             <div class="c-menu__item__inner"><i class="fas fa-user"></i>
               <div class="c-menu-item__title"><span>Account</span></div>
             </div>
