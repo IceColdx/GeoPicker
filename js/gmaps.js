@@ -95,7 +95,7 @@ function addMarker(location, map) {
   clearMarkers();
   const marker = new google.maps.Marker({
     position: location,
-    draggable: false,
+    draggable: true,
     icon: "images/marker.png",
     map: map
   });
@@ -117,7 +117,7 @@ function clearMarkers() {
 
 // Calculate points
 function pointCount() {
-  points = (1000/Math.pow(distance, 1.4));
+  points = (10000/Math.pow(distance, 1.4));
   console.log(points)
 }
 
