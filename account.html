@@ -99,17 +99,10 @@
                 <input type="checkbox"/>Remember Me
               </label><a class="form-recovery" href="#">Forgot Password?</a>
             </div>
-            <div class="social-btns"><a class="btn facebook" href="#"><i class="fab fa-facebook fa-1x"></i></a><a class="btn twitter" href="#"><i class="fab fa-twitter fa-1x"></i></a>
-            <?php
-              if($login_button == '')
-              {
-                header('Location: https://geopicker.herokuapp.com/account-login.php');
-              }
-              else
-              {
-                echo '<a>'.$login_button .'</a>';
-              }
-            ?>
+            <div class="social-btns">
+              <a class="btn facebook" href="#"><i class="fab fa-facebook fa-1x"></i></a>
+              <a class="btn google" href="#"><i class="fab fa-google fa-1x"></i></a>
+              <a class="btn twitter" href="#"><i class="fab fa-twitter fa-1x"></i></a>
             </div>
             <div class="form-group">
               <button type="submit" id="login">Log In</button>
